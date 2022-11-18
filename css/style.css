@@ -3,7 +3,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+  
+.container{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+}
 
 header{
-    background-color: black;
+    background-color: rgb(228, 33, 33);
+    height: 60px;
+}
+
+main{
+    background-color: yellow;
+    height: 100%;
+}
+
+main .sidebar{
+    width: 40px;
+    height: 100%;
+    background-color: blue;
+}
+
+main .topbar{
+    width: calc(100% - 40px);
+    height: 70px;
+    background-color: aqua;
 }
