@@ -10,12 +10,45 @@
     
     <!-- Style css -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Roboto:ital,wght@1,400&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header class="d-flex align-items-center">
-        
+            <div class="row bg-white w-100 m-0">
+                <div class="col-auto">
+                    <img class="img-fluid p-lg-2 d-none d-lg-block" src="./img/logo.svg" alt="logo">
+
+                    <img class="img-fluid logo-height d-lg-none" src="./img/mobile-logo.png" alt="logo">
+                </div>
+                <div class="col w-100">
+                    <div class="search-bar">
+                        <i class="fa solid fa-magnifying-glass"></i>
+                        <input class="search-bar-input" type="text" placeholder="Prova a cercare: Lezioni di Laravel">
+                    </div>
+                </div>
+                <div class="col-auto ">
+                    <nav class="header-menu">
+                        <ul class="manu-list ps-0">
+                           <li><i class="fa solid fa-list d-none d-lg-block"></i></li>
+                           <li><i class="fa solid fa-circle-question d-none d-lg-block"></i></li>
+                           <li><i class="fa solid fa-ellipsis-vertical d-none d-lg-block"></i></li>
+                           <li><i class="fa solid fa-bell"  data-bs-toogle="dropdown" id="dropdownMenuBell" role="button" aria-expanded="false"></i>
+                            <ul aria-labelledby="#dropdownMenuBell" class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider" href="#"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                           </li>
+                       </ul>
+                   </nav>
+                </div>
+            </div>
+        </div>
     </header>
+
+
     <main>
         <div class="container-fluid p-0">
             <div class="sidebar position-relative px-2">
@@ -40,8 +73,12 @@
                     </ul>
                 </nav>
             </div>
-            <div class="topbar">
-    
+            <div class="topbar text-white p-4">
+                <div class="row gy-3">
+                    <div class="col-12 col-md-4 col-md-6"></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         </div>
     </main>
