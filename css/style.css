@@ -3,17 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-  
-.container-fluid{
-    width: 100vw;
-    height: calc(100vh - 60px);
-    display: flex;
-}
 
 body{
     font-family: 'Roboto', sans-serif;
 }
 
+.font-size-12{
+    font-size: 12px;
+    font-weight: 100;
+}
 /* HEADER */
 header{
     background-color: #f3f0f0;
@@ -73,6 +71,14 @@ header{
 /* MAIN  */
 main{
     height: 100%;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+}
+
+.content-main{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* SIDEBAR  */
@@ -99,9 +105,25 @@ main .sidebar{
 
 /* TOPBAR  */
 main .topbar{
-    height: 100px;
+    height: 230px;
     width: 100%;
-    background-color: aqua;
+    background-color: #1b72e8;
+}
+
+.background-light{
+    background-color: rgba(0, 0, 0, 0.164); 
+}
+
+.style-badge{
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 8px;
+    padding: 2px 10px;
+    background-color: rgba(0, 0, 0, 0.164); 
+}
+
+.border-col{
+    height: 35px;
 }
 
 @media screen and (min-width:992px){
@@ -116,3 +138,18 @@ main .sidebar{
 }
 
 }
+
+@media screen and (min-width:768px){
+ 
+    main .topbar{
+        height: 120px;
+        width: 100%;
+        background-color: #1b72e8;
+    }
+    
+    .style-badge{
+        margin: 12px;
+        padding: 2px 10px;
+        background-color: rgba(0, 0, 0, 0.164); 
+    }
+    }
