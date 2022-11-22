@@ -73,10 +73,7 @@ main{
     height: 100%;
     width: 100vw;
     height: calc(100vh - 60px);
-}
-
-.content-main{
-    width: 100%;
+    overflow-y: auto;
 }
 
 /* SIDEBAR  */
@@ -125,10 +122,35 @@ main .topbar{
     height: 35px;
 }
 
+/* MAIN CONTENT */
+.fa-code{
+    background-color: orangered;
+    padding: 6px;
+    font-size: 15px;
+    border-radius: 50%;
+    color: white;
+}
+
+.badge-done, .badge-falled, .badge-process{
+    background-color: green;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: white;
+    font-size: 10px;
+}
+
+.badge-falled{
+    background-color: rgb(225, 41, 0);
+}
+
+.badge-process{
+    background-color: rgb(255, 170, 0);
+}
+
 @media screen and (min-width:992px){
     
 main .sidebar{
-    width: 150px;
+    width: 120px;
     height: 100%;
 }
 
