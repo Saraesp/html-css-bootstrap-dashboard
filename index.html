@@ -33,14 +33,17 @@
                            <li><i class="fa solid fa-list d-none d-lg-block"></i></li>
                            <li><i class="fa solid fa-circle-question d-none d-lg-block"></i></li>
                            <li><i class="fa solid fa-ellipsis-vertical d-none d-lg-block"></i></li>
-                           <li><i class="fa solid fa-bell"  data-bs-toogle="dropdown" id="dropdownMenuBell" role="button" aria-expanded=""></i>
-                            <ul aria-labelledby="#dropdownMenuBell" class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" href="#"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <i class="fa-solid fa-bell"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
-                           </li>
+                          </li>                  
                        </ul>
                    </nav>
                 </div>
@@ -98,13 +101,65 @@
                     </div>
                     <div class="col-12 col-sm-4 col-lg-2 order-1 order-sm-0 d-flex">
                         <p class="fw-light font-size-12 pe-3 pt-2 "> Nuovo Studente</p>
-                        <a class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></a><i class="fa-solid fa-plus border border-1 border-white rounded p-2 border-col"></i></a>
+                        <button class="btn btn-primary bg-transparent border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus border border-white p-2 rounded"></i></button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                      <label for="inputEmail4" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputPassword4" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">Address</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress2" class="form-label">Address 2</label>
+                                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputCity" class="form-label">City</label>
+                                      <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                      <label for="inputState" class="form-label">State</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <label for="inputZip" class="form-label">Zip</label>
+                                      <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-12">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                          Check me out
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <button type="submit" class="btn btn-primary">Sign in</button>
+                                    </div>
+                                  </form>
+                            </div>
+                          </div>                          
                     </div>
                 </div>
             </div>
             
                 <div class="content-main d-flex">
-                    <div class="col-12 col-lg-9 p-2">
+                    <div class="col-12 col-lg-8 p-2">
                         <div class="card "style="width: 100%">
                             <div class="card-header">
                                <h3>Prossime classi</h3>
@@ -313,7 +368,7 @@
                     </div>
                     </div>
 
-                    <div class="col-12 col-lg-3 p-2">
+                    <div class="col-12 col-lg-4 p-2">
                         <div class="card" style="width: 18rem;">
                             <div class="card-header">
                              Todo
@@ -341,22 +396,23 @@
                         </div>
                     
 
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card mt-2" style="width: 18rem;">
+                            <img src="./img/stats.jpeg" class="card-img-top" alt="stats">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
+                              <h5 class="card-title">Utenti attivi</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Lista degli utenti attivi in piattaforma nell'ultimo mese</h6>
                               <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                   
+                                    Gennaio: 1200
                                 </li>
                                 <li class="list-group-item">
-                                    
+                                    Febbraio: 800
                                 </li>
                                 <li class="list-group-item">  
-                                    
+                                    Marzo:1500
                                 </li>
                             </ul>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="card-link">Visualizza report approfondito</a>
                             </div>
                         </div>
                     </div>
